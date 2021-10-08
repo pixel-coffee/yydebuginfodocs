@@ -13,6 +13,9 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents
 
-   usage
-   api
+   getting_started
+   faq
+   contributing
