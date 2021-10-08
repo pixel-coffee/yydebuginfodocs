@@ -5,7 +5,9 @@ YYDebug Info: Extended debug information for Game Maker Studio 2
 With this extension, you can access the current callstack to display the current line of code associated with a particular script/line number.
 YYDebug Info also contains functions for displaying the entire source code given a particular script name or ID.
 
-This can come in handy if you want to throw more detailed exceptions during the debugging process, as Game Maker currently does not allow you to access the source code from in-game. (Note: This can only be utilized in debug/test mode, and will not work on compiled platforms such as YYC or HTML5).
+This can come in handy if you want to throw more detailed exceptions during the debugging process, as Game Maker currently does not allow you to access the source code from in-game.
+
+(Note: This extension can only be utilized in debug/test mode, and will not work on compiled platforms such as YYC or HTML5).
 
 Contents
 --------
