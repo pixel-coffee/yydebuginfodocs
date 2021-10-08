@@ -10,9 +10,6 @@ This can come in handy if you want to throw more detailed exceptions during the 
 
 (Note: This extension can only be utilized in debug/test mode, and will not work on compiled platforms such as YYC or HTML5).
 
-Contents
---------
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents
