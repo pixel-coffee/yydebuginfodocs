@@ -6,6 +6,7 @@ With this extension, you can access the current callstack to display the current
 YYDebug Info also contains functions for displaying the entire source code given a particular script name or ID.
 
 This can come in handy if you want to throw more detailed exceptions during the debugging process, as Game Maker currently does not allow you to access the source code from in-game.
+It can also be useful if you want to perform other operations on your game's source code from in-game (you could even write your own code editor in Game Maker!)
 
 Contents
 --------
