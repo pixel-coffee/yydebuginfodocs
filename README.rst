@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
+YYDebug Info
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This repository is for hosting the documentation for the YYDebug Info GML extension.
 
-Read the tutorial here:
+For more detailed info, go to:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+https://yydebuginfodocs.readthedocs.io/en/latest/usage.html
