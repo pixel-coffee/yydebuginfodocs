@@ -44,9 +44,9 @@ yydebug_get_script_code
         :linenos:
         
         // Step event
-        show_debug_message(yydebug_get_script_code(scr_move_player));
-        show_debug_message(yydebug_get_script_code("scr_move_player"));
-        show_debug_message(yydebug_get_script_code(script_get_name(scr_move_player)));
+        show_message(yydebug_get_script_code(scr_move_player));
+        show_message(yydebug_get_script_code("scr_move_player"));
+        show_message(yydebug_get_script_code(script_get_name(scr_move_player)));
         // The 3 lines above will print the contents of scr_move_player.gml
     
     Using method name:
@@ -64,9 +64,9 @@ yydebug_get_script_code
         :linenos:
         
         // Step event
-        show_debug_message(yydebug_get_script_code(global.scr_move_player)); // Works
-        show_debug_message(yydebug_get_script_code(script_get_name(global.scr_move_player))); // Works
-        show_debug_message(yydebug_get_script_code("scr_move_player")); // Returns undefined
+        show_message(yydebug_get_script_code(global.scr_move_player)); // Works
+        show_message(yydebug_get_script_code(script_get_name(global.scr_move_player))); // Works
+        show_message(yydebug_get_script_code("scr_move_player")); // Returns undefined
 
 yydebug_get_script_line
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -102,4 +102,4 @@ yydebug_get_script_line
         :linenos:
         
         // Step event
-        show_debug_message(yydebug_get_script_line(scr_move_player, 3)); // Prints "    self.x = x;"
+        show_message(yydebug_get_script_line(scr_move_player, 3)); // Prints "    self.x = x;"
