@@ -175,3 +175,128 @@ yydebug_get_script_line_count
         
         // Step event
         show_message(yydebug_get_script_line_count(scr_move_player)); // Prints 5
+        
+yydebug_callstack
+^^^^^^^^^^^^^^^^^
+
+.. py:function:: yydebug_callstack()
+
+   Similar to the built-in ``debug_get_callstack()`` function, this will return a callstack to the user, but with the following improvements:
+   
+   1. In addition to the GML script name and line number, it will return the line string itself for each function in the callstack.
+   
+   2. The GML script name and line number are separated into different struct members.
+   
+   3. Unlike ``debug_get_callstack()``, there is no unneeded trailing `0` at the end of the array.
+   
+       * **Returns:** (*array* [ *struct* ])
+       
+           Struct properties:
+
+               * **scriptName** (*string*)
+
+                    The name of the GML script, function or method.
+
+               * **lineNumber** (*integer number*)
+
+                    The current line number of execution of the script on the callstack.
+
+               * **lineInfo** (*string*)
+
+                    The line of GML code that is present on the line number of execution.
+
+            .. warning::
+                This function relies on the built-in ``debug_get_callstack()`` function.
+                As of writing this, Game Maker Studio has a bug where ``debug_get_callstack()`` will sometimes report a line number of ``-1``
+                for anonymous methods. Because of this, the structs returned by ``yydebug_callstack`` for those methods will report
+                having **lineNumber** == ``-1`` and **lineInfo** == ``undefined``. Until YYG fixes this bug, there is no way around this.
+
+            .. note::
+                The order of the array lists the current script of execution at the beginning, with its callers toward the end.
+                So if you have a method ``a`` which calls ``b`` which calls ``c``, the order if the array would be ``c`` ``b`` ``a``.
+       
+       * **Parameters:**
+       
+           * **depth** (*integer*) [Optional] -
+
+               The maximum depth of the callstack (AKA, the index number to cutoff the tail end of the returned array).
+               If ``undefined`` or not supplied, the full callstack will be returned.
+       
+           * **offset** (*integer*) [Optional] -
+
+                The starting offset of the returned callstack array. Essentially, the number of steps up the callstack to return to the callstack of.
+                So if you supply an offset of ``1``, the first element of the returned array will be the *caller* of the current script of execution.
+                If ``2``, its caller's caller, and so on.
+
+                ``0`` by default.
+                  
+    **Examples**
+    
+    .. code-block:: javascript
+        :linenos:
+        
+        // scr_move_player.gml
+        function scr_move_player(x, y) {
+            scr_move_player_x(x);
+            scr_move_player_y(y);
+        }
+        function scr_move_player_x(x) {
+            self.x = x;
+            show_message(yydebug_callstack());
+            // The above prints:
+            // [
+            //     {
+            //         scriptName : "gml_Script_scr_move_player_x",
+            //         lineNumber : 8,
+            //         lineInfo : "    show_message(yydebug_callstack());"
+            //     },
+            //     {
+            //         scriptName : "gml_Script_scr_move_player",
+            //         lineNumber : 3,
+            //         lineInfo : "    scr_move_player_x(x);"
+            //     },
+            //     {
+            //         scriptName : "gml_Room_Room1_Create",
+            //         lineNumber : 3,
+            //         lineInfo : "    with (player) scr_move_player(100, 200);"
+            //     }
+            // ]
+            show_message(yydebug_callstack(2)); // Limit depth to 2
+            // The above prints:
+            // [
+            //     {
+            //         scriptName : "gml_Script_scr_move_player_x",
+            //         lineNumber : 27,
+            //         lineInfo : "    show_message(yydebug_callstack(2)); // Limit depth to 2"
+            //     },
+            //     {
+            //         scriptName : "gml_Script_scr_move_player",
+            //         lineNumber : 3,
+            //         lineInfo : "    scr_move_player_x(x);"
+            //     }
+            // ]
+        }
+        function scr_move_player_y(y) {
+            self.y = y;
+            show_message(yydebug_callstack(undefined, 1)); // Max depth, offset of 1
+            // The above prints:
+            // [
+            //     {
+            //         scriptName : "gml_Script_scr_move_player",
+            //         lineNumber : 3,
+            //         lineInfo : "    scr_move_player_x(x);"
+            //     },
+            //     {
+            //         scriptName : "gml_Room_Room1_Create",
+            //         lineNumber : 3,
+            //         lineInfo : "    with (player) scr_move_player(100, 200);"
+            //     }
+            // ]
+        }
+    
+    .. code-block:: javascript
+        :linenos:
+        
+        // Room1 creation code
+        var player = instance_create_depth(0, 0, 0, obj_player);
+        with (player) scr_move_player(100, 200);
