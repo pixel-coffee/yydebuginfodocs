@@ -235,6 +235,13 @@ yydebug_callstack
     .. code-block:: javascript
         :linenos:
         
+        // Room1 creation code
+        var player = instance_create_depth(0, 0, 0, obj_player);
+        with (player) scr_move_player(100, 200);
+        
+    .. code-block:: javascript
+        :linenos:
+        
         // scr_move_player.gml
         function scr_move_player(x, y) {
             scr_move_player_x(x);
@@ -293,10 +300,3 @@ yydebug_callstack
             //     }
             // ]
         }
-    
-    .. code-block:: javascript
-        :linenos:
-        
-        // Room1 creation code
-        var player = instance_create_depth(0, 0, 0, obj_player);
-        with (player) scr_move_player(100, 200);
