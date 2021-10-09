@@ -10,6 +10,6 @@ Takes in the name or ID number of a GML script and returns its GML code.
         
             The name or ID number of the GML script asset, function, or method.
 
-..note::
+.. note::
    This is a note
    (Test)
