@@ -83,6 +83,7 @@ yydebug_get_script_line
     
     .. code-block:: javascript
         :linenos:
+        
             // scr_move_player.gml
             function scr_move_player(x, y) {
                 self.x = x;
@@ -91,5 +92,6 @@ yydebug_get_script_line
     
     .. code-block:: javascript
         :linenos:
+        
             // Step event
             show_debug_message(yydebug_get_script_line(scr_move_player, 3)); // Should print "        self.x = x;"
