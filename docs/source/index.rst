@@ -15,3 +15,9 @@ This can come in handy if you want to throw more detailed exceptions during the 
    :caption: Contents
 
    faq
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
+
+   yydebug_info
