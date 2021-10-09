@@ -14,6 +14,4 @@ This can come in handy if you want to throw more detailed exceptions during the 
    :maxdepth: 2
    :caption: Contents
 
-   getting_started
    faq
-   contributing
