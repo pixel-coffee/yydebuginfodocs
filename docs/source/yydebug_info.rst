@@ -12,7 +12,7 @@ yydebug_get_script_code
         
         * **Parameters:**
         
-            * **script_name_or_id** (*string* **or** *number*) -
+            * **script_name_or_id** (*string*, *method* **or** *number*) -
 
                 The name or ID number of the GML script asset, function, or method.
 
@@ -79,7 +79,7 @@ yydebug_get_script_line
        
        * **Parameters:**
        
-           * **script_name_or_id** (*string* **or** *number*) -
+           * **script_name_or_id** (*string*, *method* **or** *number*) -
 
                The name or ID number of the GML script asset, function, or method.
        
@@ -115,7 +115,7 @@ yydebug_get_script_lines
        
        * **Parameters:**
        
-           * **script_name_or_id** (*string* **or** *number*) -
+           * **script_name_or_id** (*string*, *method* **or** *number*) -
 
                The name or ID number of the GML script asset, function, or method.
                   
