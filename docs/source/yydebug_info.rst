@@ -28,6 +28,7 @@ yydebug_get_script_code
                     This function will give you the GML code associated with the method's parent GML script.
                   
     **Examples**
+    ************
     
     Using function ID/name:
     
@@ -78,3 +79,6 @@ yydebug_get_script_line
            * **line_number** (*number*) -
 
                The desired line number of the script.
+                  
+    **Examples**
+    ************
