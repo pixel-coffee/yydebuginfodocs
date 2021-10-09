@@ -55,7 +55,7 @@ YYDebug Info
         // Step event
         show_debug_message(yydebug_get_script_code(global.scr_move_player)); // Works
         show_debug_message(yydebug_get_script_code(script_get_name(global.scr_move_player))); // Works
-        show_debug_message(yydebug_get_script_code("scr_move_player")); // Does not work. scr_move_player is the name of a variable, not a function
+        show_debug_message(yydebug_get_script_code("scr_move_player")); // Returns undefined
                   
 .. py:function:: yydebug_get_script_line(script_name_or_id, line_number)
 
