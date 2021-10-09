@@ -85,7 +85,7 @@ yydebug_get_script_line
        
            * **line_number** (*number*) -
 
-               The desired line number of the script..
+               The desired line number of the script.
                   
     **Examples**
     
@@ -103,3 +103,43 @@ yydebug_get_script_line
         
         // Step event
         show_message(yydebug_get_script_line(scr_move_player, 3)); // Prints "    self.x = x;"
+        
+yydebug_get_script_lines
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. py:function:: yydebug_get_script_lines(script_name_or_id)
+
+   Similar to ``yydebug_get_script_code`` Takes in the name or ID number of a GML script, but instead of returning its GML code as a single string, it will return its GML code as an array of lines. If the script is not found, this will return ``undefined``.
+   
+       * **Returns:** (*array*[*string*] **or** *undefined*)
+       
+       * **Parameters:**
+       
+           * **script_name_or_id** (*string* **or** *number*) -
+
+               The name or ID number of the GML script asset, function, or method.
+                  
+    **Examples**
+    
+    .. code-block:: javascript
+        :linenos:
+        
+        // scr_move_player.gml
+        function scr_move_player(x, y) {
+            self.x = x;
+            self.y = y;
+        }
+    
+    .. code-block:: javascript
+        :linenos:
+        
+        // Step event
+        show_message(yydebug_get_script_lines(scr_move_player));
+        // Result:
+        // [
+        //     "// scr_move_player.gml",
+        //     "function scr_move_player(x, y) {",
+        //     "    self.x = x;",
+        //     "    self.y = y;",
+        //     "}"
+        // ]
