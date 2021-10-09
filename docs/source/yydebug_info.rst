@@ -12,7 +12,7 @@ yydebug_get_script_code
         
         * **Parameters:**
         
-            * **script_name_or_id** (*string*, *method* **or** *number*) -
+            * **script_name_or_id** (*string*, *method* **or** *integer*) -
 
                 The name or ID number of the GML script asset, function, or method.
 
@@ -79,7 +79,7 @@ yydebug_get_script_line
        
        * **Parameters:**
        
-           * **script_name_or_id** (*string*, *method* **or** *number*) -
+           * **script_name_or_id** (*string*, *method* **or** *integer*) -
 
                The name or ID number of the GML script asset, function, or method.
        
@@ -115,7 +115,7 @@ yydebug_get_script_lines
        
        * **Parameters:**
        
-           * **script_name_or_id** (*string*, *method* **or** *number*) -
+           * **script_name_or_id** (*string*, *method* **or** *integer*) -
 
                The name or ID number of the GML script asset, function, or method.
                   
@@ -143,3 +143,35 @@ yydebug_get_script_lines
         //     "    self.y = y;",
         //     "}"
         // ]
+        
+yydebug_get_script_line_count
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. py:function:: yydebug_get_script_line_count(script_name_or_id)
+
+   Takes in the name or ID number of a GML script and returns the line count of its GML code. If the script is not found, this will return ``undefined``.
+   
+       * **Returns:** (*integer number* **or** *undefined*)
+       
+       * **Parameters:**
+       
+           * **script_name_or_id** (*string*, *method* **or** *integer*) -
+
+               The name or ID number of the GML script asset, function, or method.
+                  
+    **Examples**
+    
+    .. code-block:: javascript
+        :linenos:
+        
+        // scr_move_player.gml
+        function scr_move_player(x, y) {
+            self.x = x;
+            self.y = y;
+        }
+    
+    .. code-block:: javascript
+        :linenos:
+        
+        // Step event
+        show_message(yydebug_get_script_line_count(scr_move_player)); // Prints 5
