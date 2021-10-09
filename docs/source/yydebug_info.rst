@@ -32,12 +32,16 @@ yydebug_get_script_code
     Using function ID/name:
     
     .. code-block:: javascript
+        :linenos:
    
         // scr_move_player.gml
         function scr_move_player(x, y) {
             self.x = x;
             self.y = y;
         }
+    
+    .. code-block:: javascript
+        :linenos:
         
         // Step event
         show_debug_message(yydebug_get_script_code(scr_move_player));
@@ -48,12 +52,16 @@ yydebug_get_script_code
     Using method name:
     
     .. code-block:: javascript
+        :linenos:
    
         // scr_move_player.gml
         global.scr_move_player = function(x, y) {
             self.x = x;
             self.y = y;
         }
+    
+    .. code-block:: javascript
+        :linenos:
         
         // Step event
         show_debug_message(yydebug_get_script_code(global.scr_move_player)); // Works
@@ -94,4 +102,4 @@ yydebug_get_script_line
         :linenos:
         
         // Step event
-        show_debug_message(yydebug_get_script_line(scr_move_player, 3)); // Should print "    self.x = x;"
+        show_debug_message(yydebug_get_script_line(scr_move_player, 3)); // Prints "    self.x = x;"
