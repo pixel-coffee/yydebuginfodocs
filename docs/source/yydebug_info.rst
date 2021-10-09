@@ -212,7 +212,7 @@ yydebug_callstack
                 having **lineNumber** == ``-1`` and **lineInfo** == ``undefined``. Until YYG fixes this bug, there is no way around this.
 
             .. note::
-                The order of the array lists the current script of execution at the beginning, with its callers toward the end.
+                The array is ordered such that the current script of execution appears at the beginning, with its callers toward the end.
                 So if you have a method ``a`` which calls ``b`` which calls ``c``, the order if the array would be ``c`` ``b`` ``a``.
        
        * **Parameters:**
