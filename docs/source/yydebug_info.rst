@@ -77,7 +77,7 @@ yydebug_get_script_line
        
            * **line_number** (*number*) -
 
-               The desired line number of the script..
+               The desired line number of the script.
                   
     **Examples**
     
