@@ -179,7 +179,7 @@ yydebug_get_script_line_count
 yydebug_callstack
 ^^^^^^^^^^^^^^^^^
 
-.. py:function:: yydebug_callstack()
+.. py:function:: yydebug_callstack(depth=undefined, offset=0)
 
    Similar to the built-in ``debug_get_callstack()`` function, this will return a callstack to the user, but with the following improvements:
    
