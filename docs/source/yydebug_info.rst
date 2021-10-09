@@ -26,7 +26,7 @@ YYDebug Info
                   
     **Examples**
    
-    .. code-block:: JavaScript
+    .. code-block:: javascript
    
         // scr_move_player.gml
         function scr_move_player(x, y) {
