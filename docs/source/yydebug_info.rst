@@ -26,7 +26,7 @@ YYDebug Info
                   
     **Examples**
    
-    .. code-block:: gml
+    .. code-block:: JavaScript
    
         // scr_move_player.gml
         function scr_move_player(x, y) {
@@ -38,7 +38,7 @@ YYDebug Info
         show_debug_message(yydebug_get_script_code(scr_move_player));
         show_debug_message(yydebug_get_script_code("scr_move_player"));
         show_debug_message(yydebug_get_script_code(script_get_name(scr_move_player)));
-        // THe 3 lines above will print the contents of scr_move_player.gml
+        // The 3 lines above will print the contents of scr_move_player.gml
                   
 .. py:function:: yydebug_get_script_line(script_name_or_id, line_number)
 
