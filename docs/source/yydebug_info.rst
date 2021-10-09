@@ -1,6 +1,9 @@
 YYDebug Info
 ============
 
+yydebug_get_script_code
+^^^^^^^^^^^^^^^^^^^^^^^
+
 .. py:function:: yydebug_get_script_code(script_name_or_id)
 
     Takes in the name or ID number of a GML script and returns its GML code. If the script is not found, this will return ``undefined``.
@@ -42,7 +45,7 @@ YYDebug Info
         show_debug_message(yydebug_get_script_code(script_get_name(scr_move_player)));
         // The 3 lines above will print the contents of scr_move_player.gml
     
-    Using method names:
+    Using method name:
     
     .. code-block:: javascript
    
@@ -56,7 +59,10 @@ YYDebug Info
         show_debug_message(yydebug_get_script_code(global.scr_move_player)); // Works
         show_debug_message(yydebug_get_script_code(script_get_name(global.scr_move_player))); // Works
         show_debug_message(yydebug_get_script_code("scr_move_player")); // Returns undefined
-                  
+
+yydebug_get_script_line
+^^^^^^^^^^^^^^^^^^^^^^^
+
 .. py:function:: yydebug_get_script_line(script_name_or_id, line_number)
 
    Takes in a GML script name/ID number + a line number and returns the corresponding line of GML code. If the script is not found or the line number is out of range, this will return ``undefined``.
