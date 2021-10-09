@@ -226,7 +226,7 @@ yydebug_callstack
 
                 The starting offset of the returned callstack array. This is used if want to ignore the first few elements of the callstack array.
                 So if you supply an offset of ``1``, for example, the first element of the returned array will be the *caller* of the current script of execution.
-                If ``2``, it'll return its caller's caller, and so on.
+                If ``2``, it will return its caller's caller, and so on.
 
                 ``0`` by default.
                   
