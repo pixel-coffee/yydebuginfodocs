@@ -27,8 +27,7 @@ yydebug_get_script_code
                     (You will get something like ``"anon_2D37DFFB_819"``) and pass the returned value into this function .
                     This function will give you the GML code associated with the method's parent GML script.
                   
-    Examples
-    ************
+    **Examples**
     
     Using function ID/name:
     
@@ -80,5 +79,17 @@ yydebug_get_script_line
 
                The desired line number of the script..
                   
-    Examples
-    ************
+    **Examples**
+    
+    .. code-block:: javascript
+        :linenos:
+            // scr_move_player.gml
+            function scr_move_player(x, y) {
+                self.x = x;
+                self.y = y;
+            }
+    
+    .. code-block:: javascript
+        :linenos:
+            // Step event
+            show_debug_message(yydebug_get_script_line(scr_move_player, 3)); // Should print "        self.x = x;"
