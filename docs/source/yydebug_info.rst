@@ -258,7 +258,7 @@ yydebug_callstack
             //     {
             //         scriptName : "gml_Room_Room1_Create",
             //         lineNumber : 3,
-            //         lineInfo : "    with (player) scr_move_player(100, 200);"
+            //         lineInfo : "with (player) scr_move_player(100, 200);"
             //     }
             // ]
             show_message(yydebug_callstack(2)); // Limit depth to 2
@@ -289,7 +289,7 @@ yydebug_callstack
             //     {
             //         scriptName : "gml_Room_Room1_Create",
             //         lineNumber : 3,
-            //         lineInfo : "    with (player) scr_move_player(100, 200);"
+            //         lineInfo : "with (player) scr_move_player(100, 200);"
             //     }
             // ]
         }
