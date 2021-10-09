@@ -213,7 +213,7 @@ yydebug_callstack
 
             .. note::
                 The array is ordered such that the current script of execution appears at the beginning, with its callers toward the end.
-                So if you have a method ``a`` which calls ``b`` which calls ``c``, the order if the array would be ``c`` ``b`` ``a``.
+                So if you have a method ``a`` which calls ``b`` which calls ``c``, the order of the array would be ``c`` ``b`` ``a``.
        
        * **Parameters:**
        
