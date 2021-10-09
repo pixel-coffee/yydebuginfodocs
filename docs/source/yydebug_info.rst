@@ -109,9 +109,9 @@ yydebug_get_script_lines
 
 .. py:function:: yydebug_get_script_lines(script_name_or_id)
 
-   Similar to ``yydebug_get_script_code`` Takes in the name or ID number of a GML script, but instead of returning its GML code as a single string, it will return its GML code as an array of lines. If the script is not found, this will return ``undefined``.
+   Similar to ``yydebug_get_script_code``, this will take in the name or ID number of a GML script. But instead of returning its GML code as a single string, it will return its GML code as an array of lines. If the script is not found, this will return ``undefined``.
    
-       * **Returns:** (*array*[*string*] **or** *undefined*)
+       * **Returns:** (*array* [ *string* ] **or** *undefined*)
        
        * **Parameters:**
        
