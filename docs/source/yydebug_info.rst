@@ -187,7 +187,7 @@ yydebug_callstack
    
    2. The GML script name and line number are separated into different struct members.
    
-   3. Unlike ``debug_get_callstack()``, there is no unneeded trailing `0` at the end of the array.
+   3. Unlike ``debug_get_callstack()``, there is no unneeded trailing ``0`` at the end of the array.
    
        * **Returns:** (*array* [ *struct* ])
        
@@ -219,7 +219,7 @@ yydebug_callstack
        
            * **depth** (*integer*) [Optional] -
 
-               The maximum depth of the callstack (AKA, the index number to cutoff the tail end of the returned array).
+               The maximum depth of the callstack (AKA which index to cut off the returned array at).
                If ``undefined`` or not supplied, the full callstack will be returned.
        
            * **offset** (*integer*) [Optional] -
