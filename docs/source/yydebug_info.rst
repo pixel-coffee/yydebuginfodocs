@@ -9,3 +9,7 @@ Takes in the name or ID number of a GML script and returns its GML code.
         * **script_name_or_id** (*string*, *number*) -
         
             The name or ID number of the GML script asset, function, or method.
+
+..note::
+   This is a note
+   (Test)
