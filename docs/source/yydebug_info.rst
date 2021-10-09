@@ -8,6 +8,7 @@ YYDebug Info
        * **Returns:** *string*
        
        * **Parameters:**
+       
            * **script_name_or_id** (*string*, *number*) -
 
                The name or ID number of the GML script asset, function, or method.
