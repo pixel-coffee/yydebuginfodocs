@@ -29,3 +29,12 @@ Type Reference
 
 number
 ******
+
+One of the simplest types to understand, the ``number`` type can be used to represent any real number, like ``1``, ``2``, ``-16.781``, or even ``infinity``.
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "number"``.
+
+string
+******
+
+The ``string`` type represents textual data, such as ``"John"``, ``"Player 2"``, or ``"The quick brown fox."``. The text in question can contain letters, digits, spaces, punctuation, or even unicode characters such as symbols from non-Latin-based languages.
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "string"``.
