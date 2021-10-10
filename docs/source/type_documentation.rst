@@ -13,7 +13,7 @@ what is accepted/returned by certain functions. This document attempts to allevi
 a particular standard when describing the data types of the functions detailed in the API Reference.
 
 Generally speaking, the type terms have been chosen carefully such that it should be easy enough to
-understand what is expected of the API without even needing this guide. However, in the event that documented
+understand what is expected of the API without even needing this guide. However, in the event that the documented
 type is unclear or creates confusion, this reference is here.
 
 After reading this document, the goal is that you will be able to understand API type definitions like the following:
