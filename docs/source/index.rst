@@ -14,7 +14,7 @@ This can come in handy if you want to throw more detailed exceptions during the 
    :maxdepth: 2
    :caption: Contents
 
-   faq
+   type_documentation
    
 .. toctree::
    :maxdepth: 2
