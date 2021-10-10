@@ -86,3 +86,9 @@ method
 
 The ``method`` type represents a reference to a GML function. Despite its name, it does not necessarily refer to the concept of a `method <https://en.wikipedia.org/wiki/Method_(computer_programming)>`_ from object-oriented programming (although it can).
 In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "method"``.
+
+struct
+******
+
+The ``struct`` type represents a reference to a GML struct/lightweight object. Because structs can contain a wide variety of information, this will usually be followed by a brief documentation of all of the struct's members.
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "struct"``.
