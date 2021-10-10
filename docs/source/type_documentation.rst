@@ -2,7 +2,11 @@ Type Documentation
 ==================
 
 This quick guide serves as a reference for how parameter/return types are documented in the API Reference.
-Since GML is a dynamically-typed language, it does not support nominally-typed classes, often uses ID
+
+Motivation
+^^^^^^^^^^
+
+GML is a dynamically-typed language. It does not support nominally-typed classes, often uses ID
 numbers to represent objects and certain data structures, and has functions that can accept more than one
 type of data. Because of this, it can be confusing knowing what type of data certain variables contain, or
 what is accepted/returned by certain functions. This document attempts to alleviate that by enforcing
@@ -20,5 +24,8 @@ Without any ambiguity.
 
 Without further ado, the following is a list of the type terms that will be used throughout the API Reference:
 
+Type Reference
+^^^^^^^^^^^^^^
+
 number
-^^^^^^
+******
