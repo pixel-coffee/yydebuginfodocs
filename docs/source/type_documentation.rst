@@ -101,29 +101,47 @@ In the context of our API Reference, it refers specifically to the datatype of a
 array
 *****
 
+The ``array`` type represents a collection of items stored contiguously in memory.
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "array"``.
+
 array[any]
 **********
+
+An array of any type. Equivalent to the above.
 
 array[*type* **or** *types*]
 ****************************
 
+An array containing elements of the specified *type* or *types*.
+
 integer_number
 **************
+
+Any value of type ``number`` that represents an integer. Essentially, that means ``typeof(var_name) == "number"`` **and** ``var_name == floor(var_name)``.
 
 integer
 *******
 
+Indicates that the underlying type can be ``int32``, ``int64``, or ``integer_number``.
+
 boolean_number
 **************
 
+Any value of type ``number`` that represents a boolean (1 or 0). This is what most Game Maker "booleans" actually are for legacy reasons (despite there being a separate ``bool`` data type). Our API Reference makes a distinction between the two for the sake of accuracy and to avoid confusion (it would be inaccurate to say that a function accepts a ``bool`` when in reality it accepts a ``number`` which represents a **boolean**)
+
 boolean
 *******
+
+Indicates that the underlying type can be ``bool`` or ``boolean_number``. For most API functions that accept or return true/false values, this is the type that will be specified.
 
 object_id
 *********
 
 function_id
 ***********
+
+asset_id
+********
 
 ds_list_id
 **********
