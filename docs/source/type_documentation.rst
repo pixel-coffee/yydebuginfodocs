@@ -14,7 +14,7 @@ type is unclear or creates confusion, this reference is here.
 
 After reading this document, the goal is that you will be able to understand API type definitions like the following:
 
-
+.. image:: images/api_types.png
 
 Without any ambiguity.
 
