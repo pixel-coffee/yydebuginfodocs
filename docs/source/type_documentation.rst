@@ -109,7 +109,7 @@ array[any]
 
 An array of any type. Equivalent to the above.
 
-array[*type* **or** *types*]
+array[*type* or *types*]
 ****************************
 
 An array containing elements of the specified *type* or *types*.
@@ -117,12 +117,12 @@ An array containing elements of the specified *type* or *types*.
 integer_number
 **************
 
-Any value of type ``number`` that represents an integer. Essentially, that means ``typeof(var_name) == "number"`` **and** ``var_name == floor(var_name)``.
+Any value of type ``number`` that represents an integer. Essentially, that means ``typeof(var_name) == "number"`` and ``var_name == floor(var_name)``.
 
 integer
 *******
 
-Indicates that the underlying type can be ``int32``, ``int64``, or ``integer_number``.
+Indicates that the underlying type can be either ``int32``, ``int64``, or ``integer_number``.
 
 boolean_number
 **************
@@ -132,7 +132,7 @@ Any value of type ``number`` that represents a boolean (1 or 0). This is what mo
 boolean
 *******
 
-Indicates that the underlying type can be ``bool`` or ``boolean_number``. For most API functions that accept or return true/false values, this is the type that will be specified.
+Indicates that the underlying type can be either ``bool`` or ``boolean_number``. For most API functions that accept or return true/false values, this is the type that will be specified.
 
 object_id
 *********
@@ -146,35 +146,35 @@ asset_id
 ds_list_id
 **********
 
-ds_list_id[*type* **or** *types*]
+ds_list_id[*type* or *types*]
 *********************************
 
 ds_map_id
 **********
 
-ds_map_id[(*keytype* **or** *keytypes*), (*valtype* **or** *valtypes*)]
+ds_map_id[(*keytype* or *keytypes*), (*valtype* or *valtypes*)]
 ***********************************************************************
 
 ds_grid_id
 **********
 
-ds_grid_id[*type* **or** *types*]
+ds_grid_id[*type* or *types*]
 *********************************
 
 ds_stack_id
 ***********
 
-ds_stack_id[*type* **or** *types*]
+ds_stack_id[*type* or *types*]
 **********************************
 
 ds_queue_id
 ***********
 
-ds_queue_id[*type* **or** *types*]
+ds_queue_id[*type* or *types*]
 **********************************
 
 ds_priority_id
 **************
 
-ds_priority_id[*type* **or** *types*]
+ds_priority_id[*type* or *types*]
 *************************************
