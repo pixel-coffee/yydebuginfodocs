@@ -27,6 +27,11 @@ Without further ado, the following is a list of the type terms that will be used
 Type Reference
 ^^^^^^^^^^^^^^
 
+any
+***
+
+Indicates any possible type. No restrictions whatsoever.
+
 number
 ******
 
@@ -92,3 +97,18 @@ struct
 
 The ``struct`` type represents a reference to a GML struct/lightweight object. Because structs can contain a wide variety of information, this will usually be followed by a brief documentation of all of the struct's members.
 In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "struct"``.
+
+array
+*****
+
+integer number
+**************
+
+integer
+*******
+
+boolean number
+**************
+
+boolean
+*******
