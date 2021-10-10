@@ -101,14 +101,62 @@ In the context of our API Reference, it refers specifically to the datatype of a
 array
 *****
 
-integer number
+array[any]
+**********
+
+array[*type* **or** *types*]
+****************************
+
+integer_number
 **************
 
 integer
 *******
 
-boolean number
+boolean_number
 **************
 
 boolean
 *******
+
+object_id
+*********
+
+function_id
+***********
+
+ds_list_id
+**********
+
+ds_list_id[*type* **or** *types*]
+*********************************
+
+ds_map_id
+**********
+
+ds_map_id[(*keytype* **or** *keytypes*), (*valtype* **or** *valtypes*)]
+***********************************************************************
+
+ds_grid_id
+**********
+
+ds_grid_id[*type* **or** *types*]
+*********************************
+
+ds_stack_id
+***********
+
+ds_stack_id[*type* **or** *types*]
+**********************************
+
+ds_queue_id
+***********
+
+ds_queue_id[*type* **or** *types*]
+**********************************
+
+ds_priority_id
+**************
+
+ds_priority_id[*type* **or** *types*]
+*************************************
