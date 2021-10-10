@@ -127,7 +127,7 @@ Indicates that the underlying type can be ``int32``, ``int64``, or ``integer_num
 boolean_number
 **************
 
-Any value of type ``number`` that represents a boolean (1 or 0). This is what most Game Maker "booleans" actually are for legacy reasons (despite there being a separate ``bool`` data type). Our API Reference makes a distinction between the two for the sake of accuracy and to avoid confusion (it would be inaccurate to say that a function accepts a ``bool`` when in reality it accepts a ``number`` which represents a **boolean**)
+Any value of type ``number`` that represents a boolean (1 or 0). This is what most Game Maker "booleans" actually are (despite there being a separate ``bool`` data type). Our API Reference makes a distinction between the two for the sake of accuracy and to avoid confusion (it would be inaccurate to say that a function accepts a ``bool`` when in reality it accepts a ``number`` which represents a **boolean**)
 
 boolean
 *******
