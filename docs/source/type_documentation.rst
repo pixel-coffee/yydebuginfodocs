@@ -48,13 +48,13 @@ In the context of our API Reference, it refers specifically to the datatype of a
 int32
 *****
 
-The ``int32`` type represents an integer within the range `-2,147,483,648` to `2,147,483,647`.
+The ``int32`` type represents an integer within the range ``-2,147,483,648`` to ``2,147,483,647``.
 In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "int32"``.
 
 int64
 *****
 
-The ``int64`` type represents an integer within the range `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`.
+The ``int64`` type represents an integer within the range ``-9,223,372,036,854,775,808`` to ``9,223,372,036,854,775,807``.
 In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "int64"``.
 
 ptr
@@ -69,3 +69,20 @@ undefined
 The ``undefined`` type is a `unit type <https://en.wikipedia.org/wiki/Unit_type>`_, whose value indicates that something is erroneous or invalid.
 In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "undefined"`` (and thus, ``var_name == undefined``).
 
+vec3
+****
+
+The ``vec3`` type represents a static array of size 3, specifically used for GLSL Shaders.
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "vec3"``.
+
+vec4
+****
+
+The ``vec4`` type represents a static array of size 4, specifically used for GLSL Shaders.
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "vec4"``.
+
+method
+******
+
+The ``method`` type represents a reference to a GML function. Despite its name, it does not necessarily refer to the concept of a `method <https://en.wikipedia.org/wiki/Method_(computer_programming)>`_ from object-oriented programming (although it can).
+In the context of our API Reference, it refers specifically to the datatype of any variable where ``typeof(var_name) == "method"``.
